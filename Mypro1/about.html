@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--移动端的预览设置-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="./static/css/me.css">
+</head>
+<body>
+
+    <!--1.导航栏-->
+    <nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+    <div class="ui container">
+        <!--stackable表示可堆叠的，当屏幕变小时可以堆叠在一起-->
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui teal header item">Blog</h2>
+            <a href="#" class="m-item item m-mobile-hide"><i class="mini home icon"></i>首页</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="mini idea icon"></i>分类</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>标签</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="mini clone icon"></i>归档</a>
+            <a href="#" class="active m-item item m-mobile-hide"><i class="mini info icon"></i>关于我</a>
+            <!--搜索框-->
+            <div class="right m-item item m-mobile-hide" >
+                <div class="ui icon inverted transparent input">
+                    <input type="text" placeholder="Search...">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--位于右上角的按钮-->
+    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+    <!--2.主要博客内容-->
+    <div class="m-container m-padded-tb-huge">
+        <div class="ui container">
+            <div class="ui stackable grid">
+                <!--左边的内容-->
+                <div class="eleven wide column">
+                        <!--图片-->
+                    <div class="ui segment">
+                        <img src="https://picsum.photos/id/494/800/600" alt="" class="ui rounded image">
+                    </div>
+                </div>
+                <!--右边的内容-->
+                <div class="five wide column">
+                    <div class="ui top attached segment">
+                        <div class="ui header">关于我</div>
+                    </div>
+                    <div class="ui attached segment">
+                        <p class="m-text">陈浩楠，上的复垦如果将欧迪芬热加工i二进宫i就的隔热隔热我国的给他人会员卡没说出口</p>
+                        <p class="m-text">七五九四的话v吧v白宫乒乓球光屁股帕尔的故事突然就u票据号码</p>
+                    </div>
+                    <!--爱好-->
+                    <div class="ui attached segment">
+                        <div class="ui orange basic label m-margin-tb-tiny">编程</div>
+                        <div class="ui orange basic label m-margin-tb-tiny">学习</div>
+                        <div class="ui orange basic label m-margin-tb-tiny">游戏</div>
+                        <div class="ui orange basic label m-margin-tb-tiny">听音乐</div>
+                        <div class="ui orange basic label m-margin-tb-tiny">唱跳rap</div>
+                    </div>
+                    <!--擅长-->
+                    <div class="ui attached segment">
+                        <div class="ui mini teal basic button m-margin-tb-tiny">MySQL</div>
+                        <div class="ui mini teal basic button m-margin-tb-tiny">MySQL</div>
+                        <div class="ui mini teal basic button m-margin-tb-tiny">Java</div>
+                        <div class="ui mini teal basic button m-margin-tb-tiny">MySQL</div>
+                        <div class="ui mini teal basic button m-margin-tb-tiny">Java</div>
+                        <div class="ui mini teal basic button m-margin-tb-tiny">Java</div>
+                        <div class="ui mini teal basic button m-margin-tb-tiny">MySQL</div>
+                    </div>
+                    <!--GitHub WeChat QQ-->
+                    <div class="ui bottom attached segment">
+                        <a href="#" class="ui circular icon button"><i class="github icon"></i></a>
+                        <a href="#" class="ui wechat circular icon button"><i class="wechat icon"></i></a>
+                        <a href="#" class="ui qq circular icon button" data-content="2211068912" data-position="bottom center"><i class="qq icon"></i></a>
+                    </div>
+                    <div class="ui wechat-qr flowing popup transition hidden">
+                        <img src="static/images/wechat.jpg" alt="" class="ui rounded image" style="width: 110px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!--3.底部footer-->
+        <!--m-padded-tb-massive 用于调制底部框大小-->
+    <footer class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <!--垂直的分割线 分成16份-->
+        <div class="ui inverted divided stackable grid">
+            <!--二维码-->
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="./static/images/wechat.jpg" class="ui rounded image" alt="" style="width: 110px">
+                    </div>
+                </div>
+            </div>
+            <!--最新博客-->
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">用户故事</a>
+                    <a href="#" class="item">用户故事</a>
+                    <a href="#" class="item">用户故事</a>
+                </div>
+            </div>
+            <!--联系方式-->
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin">联系方式</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item m-text-spaced">E-mail:jigexio@163.com</a>
+                    <a href="#" class="item m-text-spaced">QQ:2211068912</a>
+                </div>
+            </div>
+            <!--Blog介绍-->
+            <div class="seven wide column">
+                <h4 class="ui inverted header m-text-thin">Blog介绍</h4>
+                <p class="m-opacity-mini m-text-lined m-text-spaced m-text-lined">这是陈浩楠的个人博客</p>
+            </div>
+        </div>
+        <!--水平的分割线-->
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright 2018-2019 Haonan Chen Designed by Haonan Chen</p>
+    </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+    <script>
+        $('.menu.toggle').click(function () {
+            $('.m-item').toggleClass('m-mobile-hide')
+        });
+
+        $('.wechat').popup({
+            popup : $('.wechat-qr'),
+            on : 'hover',
+            position :'bottom center'
+        });
+
+        $('.qq').popup();
+
+    </script>
+</body>
+</html>

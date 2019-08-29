@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--移动端的预览设置-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客管理</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/me.css">
+</head>
+<body>
+
+    <!--1.导航栏-->
+    <nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+    <div class="ui container">
+        <!--stackable表示可堆叠的，当屏幕变小时可以堆叠在一起-->
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui teal header item">Blog Backstage</h2>
+            <a href="#" class="active m-item item m-mobile-hide"><i class="mini home icon"></i>博客</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="mini idea icon"></i>分类</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>标签</a>
+            <div class="right menu">
+                <div class="ui dropdown m-item item m-mobile-hide">
+                    <div class="text">
+                        <img class="ui avatar image" src="https://picsum.photos/id/1012/100/100">
+                        陈浩楠
+                    </div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a href="#" class="item">注销</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--位于右上角的按钮-->
+    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+    </nav>
+    <!--二级导航-->
+    <div class="ui attached pointing menu">
+        <div class="ui container">
+            <div class="right menu">
+                <a href="" class="item">发布</a>
+                <a href="" class="active teal item">列表</a>
+            </div>
+        </div>
+    </div>
+
+    <!--2.主要博客内容-->
+    <div class="m-container-small m-padded-tb-huge">
+        <div class="ui container">
+            <form action="#" method="post" class="ui segment form">
+                <div class="inline fields">
+                    <div class="field">
+                        <input type="text" name="title" placeholder="标题">
+                    </div>
+                    <div class="field">
+                        <div class="ui selection dropdown">
+                            <input type="hidden" name="type">
+                            <i class="dropdown icon"></i>
+                            <div class="default text">分类</div>
+                            <div class="menu">
+                                <div class="item" data-value="1">错误日志</div>
+                                <div class="item" data-value="2">开发者手册</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" id="recommend" name="recommend">
+                            <label for="recommend">推荐</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <button class="ui teal button"><i class="search icon"></i>搜索</button>
+                    </div>
+                </div>
+            </form>
+
+            <table class="ui celled table">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th class="center aligned">标题</th>
+                    <th class="center aligned">类型</th>
+                    <th class="center aligned">推荐</th>
+                    <th class="center aligned">更新时间</th>
+                    <th class="center aligned">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="center aligned">1</td>
+                    <td class="center aligned">My First Blog</td>
+                    <td class="center aligned">认知升级</td>
+                    <td class="center aligned">是</td>
+                    <td class="center aligned">2019-08-21</td>
+                    <td class="center aligned">
+                        <a href="#" class="ui mini teal basic button">编辑</a>
+                        <a href="#" class="ui mini red basic button">删除</a>
+                    </td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <th colspan="6">
+                        <div class="ui mini right floated pagination menu">
+                            <a class="item">上一页</a>
+                            <a class="item">下一页</a>
+                        </div>
+                        <a href="#" class="ui mini teal basic button m-margin-top-small">新增</a>
+                    </th>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!--3.底部footer-->
+        <!--m-padded-tb-massive 用于调制底部框大小-->
+    <footer class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui center aligned container">
+            <!--垂直的分割线 分成16份-->
+            <div class="ui inverted divided stackable grid">
+                <!--二维码-->
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img src="../static/images/wechat.jpg" class="ui rounded image" alt="" style="width: 110px">
+                        </div>
+                    </div>
+                </div>
+                <!--最新博客-->
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">用户故事</a>
+                        <a href="#" class="item">用户故事</a>
+                        <a href="#" class="item">用户故事</a>
+                    </div>
+                </div>
+                <!--联系方式-->
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin">联系方式</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item m-text-spaced">E-mail:jigexio@163.com</a>
+                        <a href="#" class="item m-text-spaced">QQ:2211068912</a>
+                    </div>
+                </div>
+                <!--Blog介绍-->
+                <div class="seven wide column">
+                    <h4 class="ui inverted header m-text-thin">Blog介绍</h4>
+                    <p class="m-opacity-mini m-text-lined m-text-spaced m-text-lined">这是陈浩楠的个人博客</p>
+                </div>
+            </div>
+            <!--水平的分割线-->
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright 2018-2019 Haonan Chen Designed by Haonan Chen</p>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+    <script>
+        $('.menu.toggle').click(function () {
+            $('.m-item').toggleClass('m-mobile-hide')
+        });
+
+        $('.ui.dropdown').dropdown();
+
+    </script>
+</body>
+</html>
